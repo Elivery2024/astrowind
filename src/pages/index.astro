@@ -21,7 +21,19 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  
+<Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Ladda ner appen',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/E_hero.jpg', alt: 'AstroWind Hero Image' }}
+  >  
     <Fragment slot="title">
     Förenkla din vardag <span class="hidden xl:inline"> du beställer med valfri leverantör vi ser till att du får leverans till gården. </span>
       <span class="text-accent dark:text-white highlight"> - </span> med din nya favoritgranne
@@ -32,19 +44,7 @@ const metadata = {
         <span class="font-semibold"></span> Med ökad nästshopping, hemleveranser av mat och generellt ökade volymer till fler mottagare, både hållbart och till lägre kostnad räcker det inte att optimera logistiken- vi måste koordinera mottagandet i staden. Välkommen till Elivery! 
 </span>
     </Fragment>
-<Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/E_hero.jpg', alt: 'AstroWind Hero Image' }}
-  >
+
   </Hero>
 
   <!-- Note Widget ******************* -->

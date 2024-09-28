@@ -21,7 +21,18 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
+  
+    <Fragment slot="title">
+    Förenkla din vardag <span class="hidden xl:inline"> du beställer med valfri leverantör vi ser till att du får leverans till gården. </span>
+      <span class="text-accent dark:text-white highlight"> - </span> med din nya favoritgranne
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> Med ökad nästshopping, hemleveranser av mat och generellt ökade volymer till fler mottagare, både hållbart och till lägre kostnad räcker det inte att optimera logistiken- vi måste koordinera mottagandet i staden. Välkommen till Elivery! 
+</span>
+    </Fragment>
+<Hero
     actions={[
       {
         variant: 'primary',
@@ -34,20 +45,6 @@ const metadata = {
     ]}
     image={{ src: '~/assets/images/E_hero.jpg', alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot="title">
-    Förenklar din vardag <span class="hidden xl:inline"> du beställer med valfri leverantör vi ser till att du får leverans till gården. </span>
-      <span class="text-accent dark:text-white highlight"> - </span> med din nya favoritgranne
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
-    </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
